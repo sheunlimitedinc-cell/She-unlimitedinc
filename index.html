@@ -1173,6 +1173,36 @@ th .col-filter-btn.active { color: #1e3a8a; }
 .sidebar-nav .tab[style*="display: none"] {
   display: none !important;
 }
+
+
+/* --- FIX PARA SA PURCHASES TAB LAYOUT --- */
+#purchases .card {
+  display: flex;
+  flex-direction: column !important; /* Pilitin na pataas-baba ang layout */
+  width: 100%;
+  overflow: visible;
+}
+
+#purchases .actions-bar {
+  width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin-bottom: 12px; /* Bigyan ng espasyo sa baba */
+}
+
+#purchases .card .scroll {
+  width: 100% !important; /* Pilitin na maging 100% ang lapad */
+  flex: 1 1 auto;
+  display: block;
+  overflow-x: auto; 
+}
+
+#purchases table {
+  width: 100%;
+  margin-top: 0; /* Alisin ang sobrang margin-top ng table */
+}
 </style>
 </head>
 <body>
